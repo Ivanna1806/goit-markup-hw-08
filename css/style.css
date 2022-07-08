@@ -501,7 +501,6 @@ address {
 }
 
 .prh {
-  margin-right: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -510,12 +509,11 @@ address {
   color: var(--primary-text-color);
 }
 
-.work-element {
-  margin-top: 20px;
+.work-element {-
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   text-transform: none;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
