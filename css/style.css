@@ -495,13 +495,12 @@ address {
 
 .icon-element {
   width: 370px;
-  padding-top: 0px;
-  padding-bottom: 20px;
+  /* padding-top: 0px;
+  padding-bottom: 20px; */
   box-sizing: border-box;
 }
 
 .prh {
-  margin-left: 24px;
   margin-right: 24px;
   font-style: normal;
   font-weight: 400;
@@ -513,9 +512,6 @@ address {
 
 .work-element {
   margin-top: 20px;
-  margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
