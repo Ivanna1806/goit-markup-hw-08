@@ -64,27 +64,6 @@ address {
   font-style: normal;
 }
 
-/* h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  text-transform: uppercase;
-} */
-
-/* h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-text-color);
-} */
-
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -100,10 +79,6 @@ address {
   padding-left: 0;
   margin: 0;
 }
-
-/* .list {
-  display: flex;
-} */
 
 .link {
   text-decoration: none;
@@ -147,23 +122,9 @@ address {
   align-items: center;
 }
 
-/* .site-nav .list {
-  display: flex;
-  color: var(--accent-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-} */
-
 .list .link {
   margin: 0 25px;
 }
-
-/* .item:hover {
-  color: var(--accent-color);
-} */
 
 .nav-link {
   color: var(--title-text-color);
@@ -236,11 +197,6 @@ address {
   letter-spacing: 0.06em;
 }
 
-/* .hero-section {
-  width: 1600px;
-  height: 600px;
-} */
-
 /*---------Features------------*/
 
 .features-list {
@@ -255,11 +211,6 @@ address {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
-/* .text-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 94px 0;
-} */
 
 .features-title {
   font-family: 'Roboto';
@@ -280,9 +231,6 @@ address {
 /* ------------------Work--------------------- */
 
 .work-section {
-  /* display: flex;
-  justify-content: center;
-  margin: 30px 0 0 0; */
   padding-top: 0;
 }
 
@@ -297,9 +245,6 @@ address {
 }
 
 .work-item {
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
   margin-right: 30px;
 }
 
@@ -495,8 +440,6 @@ address {
 
 .icon-element {
   width: 370px;
-  /* padding-top: 0px;
-  padding-bottom: 20px; */
   box-sizing: border-box;
 }
 
@@ -509,7 +452,7 @@ address {
   color: var(--primary-text-color);
 }
 
-.work-element {-
+.work-element {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -518,6 +461,7 @@ address {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
+
 .icon-work {
   display: flex;
   flex-wrap: wrap;
@@ -530,19 +474,3 @@ address {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-
-/* .icon-container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.icon-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-  padding: 0;
-  flex-basis: calc(100% / 3-30px);
-} */
