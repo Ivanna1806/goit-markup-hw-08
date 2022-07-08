@@ -278,7 +278,7 @@ address {
 /* ----------------Team------------------- */
 
 .team-section {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-button);
 }
 
 .team-icon {
@@ -394,13 +394,10 @@ address {
 .footer ul a:focus {
   color: var(--accent-color);
 }
-.footer-address {
-  margin-top: 15px 0;
-}
 
 .page-header ul a:hover,
 .page-header ul a:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* -----------------Button---------------------- */
