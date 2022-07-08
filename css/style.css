@@ -60,6 +60,14 @@ img {
   list-style: none;
 }
 
+.main-header {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
 address {
   font-style: normal;
 }
@@ -199,6 +207,22 @@ address {
 
 /*---------Features------------*/
 
+.svg-bg {
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icon-plate {
+  width: 65px;
+  height: 70px;
+}
+
 .features-list {
   display: flex;
 }
@@ -232,16 +256,6 @@ address {
 
 .work-section {
   padding-top: 0;
-}
-
-.text-list {
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  text-align: center;
-  padding-bottom: 50px;
 }
 
 .work-item {
@@ -281,15 +295,6 @@ address {
   background-color: var(--secondary-button);
 }
 
-.team-icon {
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-}
-
 .team-container {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -301,7 +306,35 @@ address {
   justify-content: center;
 }
 
-.team (:last-child) {
+.social-icon {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.social-icon:hover {
+  background-color: var(--accent-color);
+}
+
+.social-icon:hover svg {
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.team:last-child {
   margin: 0;
 }
 
@@ -333,17 +366,64 @@ address {
   border-radius: 0px 0px 4px 4px;
   margin-right: 30px;
 }
+/* ----------------------Icon------------------------- */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.company-card {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-client {
+  width: 106px;
+  height: 60px;
+}
 
 /* ---------------Footer------------------ */
+
+.footer .container {
+  display: flex;
+  gap: 70px;
+}
+
+.footer-sotial-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 .footer {
   background-color: var(--footer-color);
   padding: 60px 0 60px 0;
 }
 
+.footer .social-icon {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-icon:hover {
+  background-color: var(--accent-color);
+}
+
 .footer .contact-list {
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .contact-list:hover {
   color: var(--white-color);
@@ -354,7 +434,6 @@ address {
 .logo-link {
   color: var(--title-text-color);
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -363,22 +442,19 @@ address {
 
 .addres-footer {
   color: var(--white-color);
-  padding-top: 20px 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  font-style: normal;
 }
 
 .mail-footer {
   color: var(--footer-contacts-color);
-  font-weight: 400px;
-  margin-top: 9px 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin: 9px 0;
-  font-style: normal;
+  display: inline-block;
 }
 
 .phone-footer {
@@ -387,7 +463,6 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  font-style: normal;
 }
 
 .footer ul a:hover,
