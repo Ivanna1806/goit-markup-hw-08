@@ -173,6 +173,12 @@ address {
 /*--------  Hero ---------- */
 
 .hero {
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/icon-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 200px 0;
   background-color: var(--footer-color);
 }
@@ -316,9 +322,6 @@ address {
 }
 .social-icon:hover {
   background-color: var(--accent-color);
-}
-
-.social-icon:hover svg {
 }
 
 .social-icon svg {
