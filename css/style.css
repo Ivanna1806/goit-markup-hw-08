@@ -29,6 +29,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -45,6 +46,7 @@ ul {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -57,7 +59,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  list-style: none;
 }
 
 .main-header {
@@ -68,6 +69,7 @@ img {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
+
 address {
   font-style: normal;
 }
@@ -91,6 +93,7 @@ address {
 .link {
   text-decoration: none;
 }
+
 /* ----------------Header-------------------- */
 
 .page-header .container {
@@ -101,6 +104,7 @@ address {
 .page-header {
   border: 1px solid #ececec;
 }
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -159,7 +163,7 @@ address {
 }
 
 .auth-link {
-  font-weight: 500px;
+  font-weight: 500c;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -170,17 +174,31 @@ address {
   color: var(--accent-color);
 }
 
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin: 0 10px 0 0;
+}
+
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  margin: 0 10px 0 0;
+}
+
 /*--------  Hero ---------- */
 
 .hero {
-  width: 100%;
+  max-width: 1600px;
   height: 600px;
   background-image: url(../images/icon-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: rgba(19, 19, 20, 0.4);
   padding: 200px 0;
   background-color: var(--footer-color);
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -235,11 +253,11 @@ address {
 
 .features-item {
   width: 270px;
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .features-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 0;
 }
 
 .features-title {
@@ -253,6 +271,7 @@ address {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
 .features-text {
   line-height: 1.71;
   color: var(--primary-text-color);
@@ -295,6 +314,7 @@ address {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
 /* ----------------Team------------------- */
 
 .team-section {
@@ -302,7 +322,7 @@ address {
 }
 
 .team-container {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
 }
 
@@ -314,14 +334,33 @@ address {
 
 .social-icon {
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
+  /* width: 44px;
+  height: 44px; */
   justify-content: center;
   display: flex;
   align-items: center;
+  border-bottom: 30px;
+  color: var(--primary-text-color);
 }
+
 .social-icon:hover {
   background-color: var(--accent-color);
+}
+
+.social-link svg:hover,
+.social-link svg:focus {
+  color: var(--accent-color);
+}
+
+.social-link {
+  fill: #afb1b8;
+}
+.social-icon {
+  fill: #ffffff;
+  margin-right: 15px;
+}
+li.social-icon:hover {
+  color: var(--secondary-button);
 }
 
 .social-icon svg {
@@ -335,6 +374,7 @@ address {
   justify-content: center;
   margin-bottom: 30px;
   gap: 10px;
+  margin-top: 16px;
 }
 
 .team:last-child {
@@ -348,14 +388,13 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-top: 30px;
 }
+
 .paragraph {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  padding-bottom: 30px;
   margin-top: 10px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -369,6 +408,11 @@ address {
   border-radius: 0px 0px 4px 4px;
   margin-right: 30px;
 }
+
+/* .social-link {
+  justify-content: center;
+} */
+
 /* ----------------------Icon------------------------- */
 
 .flex-container {
@@ -376,6 +420,7 @@ address {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 50px;
+  gap: 30px;
 }
 
 .company-card {
@@ -387,16 +432,22 @@ address {
   justify-content: center;
   align-items: center;
 }
+
 .icon-client {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
 }
 
+.icon-client:hover {
+  color: var(--accent-color);
+}
 /* ---------------Footer------------------ */
 
 .footer .container {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .footer-sotial-header {
@@ -408,8 +459,8 @@ address {
   text-align: left;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 10px;
 }
+
 .footer {
   background-color: var(--footer-color);
   padding: 60px 0 60px 0;
@@ -428,12 +479,15 @@ address {
   padding: 0;
   margin-top: 20px;
 }
+
 .contact-list:hover {
   color: var(--white-color);
 }
+
 .contact-list:focus {
   color: var(--white-color);
 }
+
 .logo-link {
   color: var(--title-text-color);
   font-family: 'Raleway';
@@ -489,7 +543,10 @@ address {
   line-height: 1.87;
   margin-right: 8px;
 }
-
+.site-button:hover,
+.site-button:focus {
+  border-bottom: 4px;
+}
 .secondary-button {
   background: var(--secondary-button);
   border-radius: 4px;
@@ -511,6 +568,11 @@ address {
   color: var(--white-color);
 }
 
+.button {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
 /* ----------------Portfolio--------------------- */
 
 .icon-element {
@@ -547,5 +609,17 @@ address {
 
 .example-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.icon-icon {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.icon-icon:hover {
   border: 1px solid #eeeeee;
 }
