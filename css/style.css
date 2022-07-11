@@ -49,6 +49,7 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
@@ -393,6 +394,7 @@ address {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-top: 16px;
 }
 
 .team:last-child {
@@ -568,6 +570,67 @@ address {
   color: var(--accent-color);
 }
 
+/* ------------------Modal------------------- */
+
+.backdrop {
+  position: fixed;
+
+  transition: opacity 300ms linear, visibility 300ms linear;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .backdrop.is-hidden .modal {
+  transform: translate(-50% -50%) scale(0);
+} */
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(92, 51, 51, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.modal-open-btn {
+  right: 8px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  background-image: url(../images/close-svg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+.modal-control {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
 /* -----------------Button---------------------- */
 
 .site-button {
@@ -612,6 +675,32 @@ address {
   width: 370px;
   box-sizing: border-box;
   display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.top-text {
+  position: absolute;
+  left: -1px;
+  color: var(--secondary-button);
+  background: rgba(33, 150, 243, 0.9);
+  height: 0;
+  display: block;
+  bottom: 108px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  width: 371px;
+  overflow: hidden;
+}
+.icon-element:hover .top-text {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms;
+  height: 294px;
+  padding: 63px 24px;
 }
 
 .prh {

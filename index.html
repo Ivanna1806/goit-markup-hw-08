@@ -51,7 +51,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Эффeктивное решение для вашего бизнеса</h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <button class="hero-button"  type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -358,6 +358,23 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop"  data-modal>
+    <div class="modal"> 
+      <div class="modal-control"> 
+       <button type="button" class="modal-open-btn" data-modal-close>  
+         </button>
+      </div> 
+      <div class="modal-content">
+       
+      </div>
+    </div>
+   </div>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/modal.js"></script>  
+</body>
+
 
 
 
