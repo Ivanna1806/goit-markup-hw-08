@@ -180,6 +180,7 @@ address {
   width: 16px;
   height: 12px;
   margin: 0 10px 0 0;
+  fill: currentColor;
 }
 
 .auth-item:hover .mail-icon {
@@ -189,6 +190,7 @@ address {
   width: 10px;
   height: 16px;
   margin: 0 10px 0 0;
+  fill: currentColor;
 }
 
 .auth-item:hover .phone-icon {
@@ -199,7 +201,8 @@ address {
 .hero {
   max-width: 1600px;
   height: 600px;
-  background-image: url(../images/icon-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/icon-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -263,6 +266,10 @@ address {
   margin-bottom: 30px;
 }
 
+.svg-bg:hover,
+.svg-bg:focus {
+  border: 1px solid var(--accent-color);
+}
 .icon-plate {
   width: 65px;
   height: 70px;
@@ -385,9 +392,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
   gap: 10px;
-  margin-top: 16px;
 }
 
 .team:last-child {
@@ -425,9 +430,9 @@ address {
   margin-right: 0;
 }
 
-/* .social-link {
+.social-link {
   justify-content: center;
-} */
+}
 
 /* ----------------------Icon------------------------- */
 
@@ -445,14 +450,22 @@ address {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
+  color: #afb1b8;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .icon-client {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+}
+
+.company-card:hover,
+.company-card:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .company-card:hover .icon-client {
@@ -462,7 +475,6 @@ address {
 /* ---------------Footer------------------ */
 .footer .container {
   display: flex;
-  gap: 70px;
   align-items: baseline;
 }
 
@@ -494,6 +506,14 @@ address {
   margin: 0;
   padding: 0;
   margin-top: 20px;
+}
+
+.social-footer {
+  fill: #ffffff;
+}
+
+.col-footer {
+  margin-right: 70px;
 }
 
 .contact-list:hover {
@@ -626,7 +646,8 @@ address {
   border: 1px solid #eeeeee;
 }
 
-.icon-element:hover {
+.icon-element:hover,
+.icon-element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
