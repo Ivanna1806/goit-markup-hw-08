@@ -151,7 +151,11 @@ address {
   position: relative;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-  transform: var(--accent-color);
+  
+}
+.nav-link:hover,
+.nav-link:focus{
+  color: var(--accent-color);
 }
 
 .nav-link.current::after {
@@ -187,6 +191,14 @@ address {
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: var(--accent-color);
+}
+
+.auth-link:hover,
+.auth-link:focus{
+  color: var(--accent-color);
 }
 
 .auth-item:hover,
@@ -333,6 +345,11 @@ address {
   color: var(--white-color);
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .work-list {
@@ -388,25 +405,25 @@ address {
   display: flex;
   align-items: center;
   border-bottom: 30px;
-  color: var(--primary-text-color);
+  color: #AFB1B8;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-  transition-property: background-color;
-  transition-duration: var(--accent-color);
+  transition-property: background-color,color;
+ 
 
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus{
   background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 .social-link {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
-.social-icon:hover .social-link {
-  fill: var(--white-color);
-}
+
 
 .social-icon svg {
   width: 20px;
@@ -418,7 +435,7 @@ address {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 16px;
+ 
 }
 
 .team:last-child {
@@ -464,13 +481,25 @@ address {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 50px;
   gap: 30px;
 }
 
 .company-card {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  display: flex;
+  color: #afb1b8;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border, color;
+  
+}
+.icon-navigation{
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -482,23 +511,29 @@ address {
   cursor: pointer;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-  transition-duration: border: 1px solid #afb1b8;;
+ transition-property: border, color;
+}
+
+.icon-navigation:hover,
+.icon-navigation:focus{
+  border: 1px solid var(--accent-color);
+  color:  var(--accent-color);
 }
 
 .icon-client {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .company-card:hover,
 .company-card:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  color:  var(--accent-color);
 }
 
 .company-card:hover .icon-client {
-  fill: var(--accent-color);
+  fill:  var(--accent-color);
 }
 
 /* ---------------Footer------------------ */
@@ -567,6 +602,9 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: var(--accent-color);
 }
 
 .mail-footer {
@@ -577,6 +615,9 @@ address {
   letter-spacing: 0.03em;
   margin: 9px 0;
   display: inline-block;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: var(--accent-color);
 }
 
 .phone-footer {
@@ -585,6 +626,9 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: var(--accent-color);
 }
 
 .footer ul a:hover,
@@ -592,17 +636,14 @@ address {
   color: var(--accent-color);
 }
 
-.page-header ul a:hover,
-.page-header ul a:focus {
-  color: var(--accent-color);
-}
 
 /* ------------------Modal------------------- */
 
 .backdrop {
   position: fixed;
-
-  transition: opacity 250ms linear, visibility 300ms linear, cubic-bezier(0.4, 0, 0.2, 1);
+ opacity: 1;
+ visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms  cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
@@ -624,30 +665,34 @@ address {
   height: 581px;
   background-color: var(--white-color);
   border-radius: 5px;
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  padding: 40px;
+  /* display: flex;
+  /* flex-direction: column;
+  justify-content: flex-start; */ 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(92, 51, 51, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  transform: center;
-  translate: center;
+  /* position: absolute; */
 }
-.modal-open-btn {
-  right: 8px;
+
+
+.modal-btn{
+  position: absolute;
+  right: 8px; 
   top: 10px;
   width: 30px;
   height: 30px;
-  border: 1px solid;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
   display: flex;
-  background-image: url(../images/close-svg.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 18px 18px;
+ /* position: relative; */
+  margin: -50px;
+  margin-top: -45px;
+  margin-right: -40px;
 }
+
+
 
 .is-hidden {
   opacity: 0;
@@ -694,8 +739,9 @@ address {
   border: 0;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-  transition-property: var(--accent-color);
-  transform: background-color;
+  transition-property: background-color, color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -737,6 +783,7 @@ address {
   overflow: hidden;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  
 }
 .icon-element:hover .top-text {
   height: 294px;
