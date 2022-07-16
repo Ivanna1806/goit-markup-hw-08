@@ -380,20 +380,57 @@
     <div class="modal">
       <div class="modal-control">
         <button type="button" class="modal-open-btn" data-modal-close>
-          <svg class="modal-btn">
+          <svg class="modal-btn-close">
             <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
       </div>
       <div class="modal-content">
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label class="modal-label">Имя</label>
+            <input tupe="text" name="user-name" class="modal-input" required />
+            <svg class="input-icon">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-person-svg"></use>
+            </svg>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel">Телефон</label>
+            <input tupe="text" name="user-tel" class="modal-input" required minlength="10" title="+380 (96) 111 22 33"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" id="user-tel" />
+            <svg class="input-icon">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-phone-svg"></use>
+            </svg>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-mail">Почта</label>
+            <input type="text" name="user-mail" class="modal-input" />
+            <svg class="input-icon">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-mail-svg"></use>
+            </svg>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="text">Коментарий</label>
+            <textarea name="modal-text" id="modal-text" class="modal-text-area" placeholder="Введите текст"></textarea>
+          </div>
 
+          <div class="modal-chekbox">
+            <label for="html" class="modal-terms">Соглашаюсь с рассылкой и принимаю <a href=""
+                class="check-text">Условия договора</a></label>
+            <input type="checkbox" name="" id="">
+          </div>
+          <button type="submit" class="modal-btn">Отправить</button>
+        </form>
       </div>
     </div>
   </div>
-
+  <script src="./button-svg.svg"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./js/modal.js"></script>
 </body>
-
 
 
 
