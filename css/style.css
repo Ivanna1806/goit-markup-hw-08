@@ -340,6 +340,7 @@ address {
   justify-content: center;
   width: 100%;
   height: 70px;
+  font-weight: 700;
   position: absolute;
   left: 0;
   color: var(--white-color);
@@ -388,7 +389,7 @@ address {
 
 .team-container {
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .team {
@@ -435,6 +436,7 @@ address {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-top: 16px;
  
 }
 
@@ -485,20 +487,7 @@ address {
   gap: 30px;
 }
 
-.company-card {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #AFB1B8;
-  display: flex;
-  color: #afb1b8;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  transition-property: border, color;
-  
-}
+
 .icon-navigation{
   width: 170px;
   height: 92px;
@@ -526,15 +515,7 @@ address {
   fill: currentColor;
 }
 
-.company-card:hover,
-.company-card:focus {
-  border: 1px solid var(--accent-color);
-  color:  var(--accent-color);
-}
 
-.company-card:hover .icon-client {
-  fill:  var(--accent-color);
-}
 
 /* ---------------Footer------------------ */
 .footer .container {
@@ -552,6 +533,13 @@ address {
   color: #ffffff;
   margin-bottom: 20px;
 }
+.footer-social-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  }
 
 .footer {
   background-color: var(--footer-color);
