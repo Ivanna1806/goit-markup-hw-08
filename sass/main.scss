@@ -1,3 +1,4 @@
+@import './base/main-style.scss';
 @import './utils/vars.scss';
 @import './components/logo';
 @import './components/nav';
@@ -5,4 +6,7 @@
 @import './components/features-card';
 @import './components/fonts';
 @import './components/our-work-card';
+@import './components/hero';
+@import './components/team';
 @import './components/social-icons';
+@import './components/modal';
