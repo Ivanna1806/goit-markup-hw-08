@@ -385,6 +385,7 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 20px;
+  font-style: normal;
 }
 
 .social-footer {
@@ -570,6 +571,7 @@ img {
   border: none;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
 }
 
 .online-form {
