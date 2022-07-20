@@ -1,6 +1,6 @@
 .work__item {
-  margin-right: 30px;
   position: relative;
+
   .work__item__paragraf {
     display: flex;
     align-items: center;
@@ -19,4 +19,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
