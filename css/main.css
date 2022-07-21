@@ -248,6 +248,7 @@ img {
 
 .icon-client {
   width: 106px;
+  max-width: 354px;
   height: 60px;
   fill: currentColor;
 }
@@ -376,8 +377,9 @@ col .logo {
 /* -----------------Button---------------------- */
 .site-button {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 8px;
-  justify-content: center;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
@@ -391,7 +393,8 @@ col .logo {
 
 /* ----------------Portfolio--------------------- */
 .icon-element {
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   box-sizing: border-box;
   display: block;
   position: relative;
@@ -448,7 +451,7 @@ col .logo {
 .icon-work {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   margin-top: 50px;
 }
@@ -522,7 +525,18 @@ col .logo {
     flex-direction: row;
   }
   .flex-container {
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .icon-element {
+    width: 354px;
+    gap: 30px;
+  }
+  .visually-hidden {
+    justify-content: center;
+  }
+  .site-button {
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -531,6 +545,9 @@ col .logo {
   }
   .company-card {
     max-width: 170px;
+  }
+  .icon-element {
+    width: 370px;
   }
 }
 :root {
@@ -626,6 +643,13 @@ button {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .flex-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
 .features__item {
   width: 100%;
 }
@@ -1138,4 +1162,52 @@ a {
 }
 .backdrop .modal .modal-content {
   padding: 4px 40px 40px 40px;
+}
+
+.mobile-nav-wrap .nav-control {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-nav-wrap .logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.mobile-nav-wrap .button-close {
+  width: 24px;
+  height: 17px;
+  position: relative;
+}
+.mobile-nav-wrap .button-close .line {
+  width: 24px;
+  height: 3px;
+  background-color: #2196f3;
+  display: block;
+  position: relative;
+  transform: 250ms;
+}
+.mobile-nav-wrap .button-close .line.middle {
+  top: 7px;
+}
+.mobile-nav-wrap .button-close .line.bottom {
+  top: 14px;
+}
+.mobile-nav-wrap .button-close.opened .line.middle {
+  display: none;
+}
+.mobile-nav-wrap .button-close.opened .line.top {
+  transform: rotate(-45deg);
+  top: 7px;
+}
+.mobile-nav-wrap .button-close.opened .line.bottom {
+  transform: rotate(45deg);
+  top: 4px;
 }/*# sourceMappingURL=main.css.map */

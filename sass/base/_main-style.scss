@@ -362,6 +362,7 @@ img {
 
 .icon-client {
   width: 106px;
+  max-width: 354px;
   height: 60px;
   fill: currentColor;
 }
@@ -491,8 +492,9 @@ col {
 
 .site-button {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 8px;
-  justify-content: center;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
@@ -507,7 +509,8 @@ col {
 /* ----------------Portfolio--------------------- */
 
 .icon-element {
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   box-sizing: border-box;
   display: block;
   position: relative;
@@ -564,7 +567,7 @@ col {
 .icon-work {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   margin-top: 50px;
 }
@@ -640,11 +643,23 @@ col {
     gap: 30px 0;
     justify-content: space-between;
   }
+
   .work-list {
     flex-direction: row;
   }
   .flex-container {
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .icon-element {
+    width: 354px;
+    gap: 30px;
+  }
+  .visually-hidden {
+    justify-content: center;
+  }
+  .site-button {
+    justify-content: center;
   }
 }
 
@@ -654,5 +669,8 @@ col {
   }
   .company-card {
     max-width: 170px;
+  }
+  .icon-element {
+    width: 370px;
   }
 }
