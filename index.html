@@ -48,12 +48,15 @@
             </svg>
             +38 096 111 11 11</a></li>
       </ul> -->
-      <div class="mobile-nav-wrap">
+      <div class="mobile-nav-wrap"
+      mobile-nav-wrap>
         <div class="nav-control">
           <a href="./index.html" class="logo">
             WebStudio
           </a>
-          <div class="button-close opened">
+          <div class="button-close opened"
+          nav-btn>
+           
             <span class="line top">
 
             </span>
@@ -65,7 +68,8 @@
             </span>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown hidden-dropdown"
+        dropdown>
           <nav class="mobile-nav">
             <ul class="mobile-navigation">
               <li><a href="./index.html" class="nav__link nav__link--current">Студио</a></li>
@@ -73,7 +77,14 @@
               <li><a href="#" class="nav__link">Контакты</a></li>
             </ul>
           </nav>
-          <ul class="">
+          <ul>
+            
+            <li class="auth-tel"><a href="tel:+380961111111" class="auth-link">
+              <svg class="phone-icon">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone-icon"></use>
+              </svg>
+              +38 096 111 11 11</a>
+            </li>
             <li class="auth-item">
               <a href="mailto:info@devstudio.com" class="auth-link">
                 <svg class="mail-icon">
@@ -83,11 +94,13 @@
               </a>
             </li>
     
-            <li class="auth-item"><a href="tel:+380961111111" class="auth-link">
-                <svg class="phone-icon">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone-icon"></use>
-                </svg>
-                +38 096 111 11 11</a></li>
+            
+          </ul>
+          <ul class="social-link-wrap">
+            <li class="social-nav-link"><a href="">Instagram</a></li>
+            <li class="social-nav-link"><a href="">Twitter</a></li>
+            <li class="social-nav-link"><a href="">Facebook</a></li>
+            <li class="social-nav-link"><a href="">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -168,6 +181,7 @@
           <li class="work__item">
             <p class="work__item__paragraf">Дизайнерские решения</p>
             <img src="images/img-doing3.jpg" alt="Внедрение новой информации " width="100%" height="294" />
+            
 
           </li>
 
@@ -178,7 +192,11 @@
         <h2 class="main__header">Наша команда</h2>
         <ul class="team">
           <li class="team-item">
-            <img src="images/img-team1.jpg" alt="Дизайнер вашего бизнеса" width="100%" height="260" />
+            <picture>
+              <source srcset="images/Studio/team-1-1x.jpg 1x,images/Studio/team-1-2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="images/Studio/team-1-1x.jpg 1x,images/Studio/team-1-2x.jpg 2x" media="(min-width: 768px)">
+              <img src="images/Studio/team-1-2x.jpg" alt="Дизайнер вашего бизнеса" width="100%" height="260"> 
+             </picture>
             <div class="team-container">
               <h3 class="team-title">Игорь Демьяненко</h3>
               <p class="paragraph">Product Designer</p>
@@ -215,7 +233,12 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="images/img-team2.jpg" alt="Разработкик" width="100%" height="260" />
+            <picture>
+              <source srcset="images/Studio/team-2-1x.jpg 1x,images/Studio/team-2-2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="images/Studio/team-2-1x.jpg 1x,images/Studio/team-2-2x.jpg 2x" media="(min-width: 768px)">
+              <img src="images/Studio/team-2-2x.jpg" alt="Разработкик" width="100%" height="260"> 
+             </picture>
+            
             <div class="team-container">
               <h3 class="team-title">Ольга Репина</h3>
               <p class="paragraph">Frontend Developer</p>
@@ -252,7 +275,12 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="images/img-team3.jpg" alt="Продвижение сайта" width="100%" height="260" />
+            <picture>
+              <source srcset="images/Studio/team-3-1x.jpg 1x,images/Studio/team-3-2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="images/Studio/team-3-1x.jpg 1x,images/Studio/team-3-2x.jpg 2x" media="(min-width: 768px)">
+              <img src="images/Studio/team-3-2x.jpg" alt="Продвижение сайта" width="100%" height="260"> 
+             </picture>
+            
             <div class="team-container">
               <h3 class="team-title">Николай Тарасов</h3>
               <p class="paragraph">Marketing</p>
@@ -289,7 +317,11 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="images/img-team4.jpg" alt="Красота сайта" width="100%" height="260" />
+            <picture>
+              <source srcset="images/Studio/team-4-1x.jpg 1x,images/Studio/team-4-2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="images/Studio/team-4-1x.jpg 1x,images/Studio/team-4-2x.jpg 2x" media="(min-width: 768px)">
+              <img src="images/Studio/team-4-2x.jpg" alt="Красота сайта" width="100%" height="260"> 
+             </picture>
             <div class="team-container">
               <h3 class="team-title">Максим Ермаков</h3>
               <p class="paragraph">UI Designer</p>
@@ -490,6 +522,7 @@
     AOS.init();
   </script>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-navigation.js"></script>
 </body>
 
 
