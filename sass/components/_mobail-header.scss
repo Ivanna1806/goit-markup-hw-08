@@ -37,9 +37,6 @@
       position: relative;
       transform: 250ms;
 
-      &.top {
-      }
-
       &.middle {
         top: 7px;
       }
@@ -122,17 +119,43 @@
       display: flex;
       gap: 10px;
       margin-top: 64px;
+      flex-wrap: wrap;
+      color: #2196f3;
+
       .social-nav-link {
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0.02em;
         color: #2196f3;
-        padding-left: 10px;
-        &:first-child {
-          padding: 0;
+        position: relative;
+        margin-right: 10px;
+        a {
+          color: #2196f3;
+        }
+        &:last-child {
+          margin-right: 0;
+          &::after {
+            content: none;
+          }
+        }
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 100%;
+          width: 1px;
+          background: rgba(33, 33, 33, 0.2);
+          right: -10px;
+          top: 0;
         }
       }
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .mobile-nav-wrap {
+    display: none;
   }
 }

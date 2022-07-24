@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   .close-svg {
     width: 18px;
     height: 18px;
@@ -199,21 +200,25 @@
     justify-content: flex-end;
     position: relative;
   }
+
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
+
   .modal {
     width: 528px;
-    height: 581px;
+    height: fit-content;
     background-color: var(--white-color);
     border-radius: 5px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(92, 51, 51, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 0 15px;
 
     .modal-control {
       padding: 8px;
+
       .modal-close-btn {
         background: none;
         border: none;
