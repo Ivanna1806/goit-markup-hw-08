@@ -185,6 +185,7 @@ img {
 
 .work-section {
   padding-top: 0;
+  display: none;
 }
 
 .work-item {
@@ -324,6 +325,9 @@ col {
 
   .logo {
     margin: 0;
+  }
+  .page-header__logo {
+    color: white;
   }
 }
 
@@ -562,13 +566,21 @@ col {
   .footer .container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
-
+@media screen and (min-width: 1024px) {
+  .main-nav,
+  .auth-nav {
+    display: flex;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
+  }
+  .work-section {
+    display: block;
   }
 
   .company-card {
@@ -577,11 +589,6 @@ col {
 
   .icon-element {
     width: 370px;
-  }
-
-  .main-nav,
-  .auth-nav {
-    display: flex;
   }
 
   .form-wrapper {

@@ -167,6 +167,7 @@ img {
 /* ------------------Work--------------------- */
 .work-section {
   padding-top: 0;
+  display: none;
 }
 
 .work-item {
@@ -306,6 +307,10 @@ col {
 .col-footer .logo,
 col .logo {
   margin: 0;
+}
+.col-footer .page-header__logo,
+col .page-header__logo {
+  color: white;
 }
 
 .contact-list:hover {
@@ -531,22 +536,27 @@ col .logo {
   .footer .container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-nav,
+.auth-nav {
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
+  .work-section {
+    display: block;
+  }
   .company-card {
     max-width: 170px;
   }
   .icon-element {
     width: 370px;
-  }
-  .main-nav,
-.auth-nav {
-    display: flex;
   }
   .form-wrapper {
     width: fit-content;
@@ -1321,7 +1331,7 @@ a {
   top: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .mobile-nav-wrap {
     display: none;
   }
